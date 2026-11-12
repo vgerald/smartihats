@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Automation</title>
+<meta name="description" content="Watch a full day unfold at a SmartiHats home — sunrise, commute, dinner, good night — the routines we build for real homes.">
+<meta property="og:title" content="Daily Automation">
+<meta property="og:description" content="Watch a full day unfold at a SmartiHats home — sunrise, commute, dinner, good night — the routines we build for real homes.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SmartiHats">
+<meta property="og:url" content="https://smartihats.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%2317a3c4%27/%3E%3Cpath d=%27M16 7l9 6v12H7V13z%27 fill=%27%23ffffff%27 opacity=%27.92%27/%3E%3Crect x=%2713%27 y=%2718%27 width=%276%27 height=%277%27 rx=%271%27 fill=%27%2317a3c4%27/%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('smartihats-theme');if(t){document.documentElement.setAttribute('data-theme',t);return}if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}})();</script>
+<link rel="stylesheet" href="../../styles.css">
+<link rel="preload" href="../../styles.css" as="style">
+<script src="../../script.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"SmartiHats","description":"Smart home automation design, install, and support in Sandy Springs and Metro Atlanta. One app for your whole home, local experts, and lifetime support.","url":"https://smartihats.com/","email":"hello@smartihats.com","areaServed":[{"@type":"City","name":"Sandy Springs"},{"@type":"City","name":"Atlanta"}],"address":{"@type":"PostalAddress","addressLocality":"Sandy Springs","addressRegion":"GA","addressCountry":"US"},"priceRange":"$$$","slogan":"One app for your whole home — we build it, and we stay in your corner.","knowsAbout":["smart lighting","smart locks","smart thermostat","local-recording cameras","home scenes","local AI automation","whole-home smart integration"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap header-inner">
+    <a class="brand" href="../..//" aria-label="SmartiHats — home">
+      <svg width="26" height="26" viewBox="0 0 32 32" role="img" aria-label="SmartiHats logo"><rect width="32" height="32" rx="8" style="fill:var(--accent)"></rect><path d="M16 7l9 6v12H7V13z" style="fill:var(--surface)"></path><rect x="13" y="18" width="6" height="7" rx="1" style="fill:var(--accent-strong)"></rect></svg>
+      <span>SmartiHats</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../..//features/">Features</a>
+      <a href="../..//solutions/">Solutions</a>
+      <a href="../..//demo/">Demo</a>
+      <a href="../..//pricing/">Pricing</a>
+      <a href="../..//support/">Support</a>
+      <a class="btn btn-primary" href="../../book/">Let's Talk</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">&#127769;</button>
+    <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+<main id="main"><nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a> &rsaquo; <a href="../../demo/">Demos</a> &rsaquo; Daily Automation</nav><section class="page-hero"><div class="wrap"><span class="kicker">Demo</span><h1>Daily Automation</h1><p>Here&rsquo;s what a typical day looks like with the routines we build. Press <em>Play the day</em> and watch the timeline advance.</p></div></section><section class="block"><div class="wrap"><div class="prose"><p>The point of the demo is the <em>seamlessness</em>. None of these moments require you to open an app. The house handles itself on your schedule, and you only step in when you want to.</p><p>Every one of these moments is a routine we can configure to your real life: your commute times, your kids&rsquo; bedtime, your thermostat preferences, your cameras&rsquo; armed windows.</p></div></div></section><section class="block tight"><div class="wrap">
+<h2 style="margin-bottom:.2rem">A full day, hour by hour</h2>
+<p class="prose" style="max-width:46rem">The exact scene an install at 8 p.m. would trigger &mdash; play the day and watch the automation fire.</p>
+<div class="day-stages" id="dayStages" aria-live="polite">
+  <div class="day-card active"><span class="day-time">6:30 AM</span><h4>Good Morning</h4><p>Lights warm up gradually. Thermostat to 68. Doors remain locked until you unlock.</p></div>
+  <div class="day-card"><span class="day-time">8:15 AM</span><h4>Commute</h4><p>Front door locks. Cameras arm. Thermostat drops to 65 for the day.</p></div>
+  <div class="day-card"><span class="day-time">12:00 PM</span><h4>Midday</h4><p>Occupancy sensors report empty. No motion. All clear.</p></div>
+  <div class="day-card"><span class="day-time">5:45 PM</span><h4>Coming Home</h4><p>Front lights warm up. Thermostat climbs to 70. Porch light on.</p></div>
+  <div class="day-card"><span class="day-time">8:00 PM</span><h4>Dinner</h4><p>Kitchen lights to 80%. Side lamps on. Music low on the kitchen speaker.</p></div>
+  <div class="day-card"><span class="day-time">11:30 PM</span><h4>Good Night</h4><p>All non-security lights off. Doors lock. Cameras arm. Thermostat to 66.</p></div>
+</div>
+<div class="day-controls">
+  <button class="btn btn-primary" id="playDay">▶ Play the day</button>
+  <button class="btn btn-ghost" id="pauseDay">⏸ Pause</button>
+  <button class="btn btn-ghost" id="resetDay">↺ Reset</button>
+  <span class="muted" id="dayStatus">Paused</span>
+</div>
+</div></section></main>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="24" height="24" viewBox="0 0 32 32" role="img" aria-label="SmartiHats logo"><rect width="32" height="32" rx="8" style="fill:var(--accent)"></rect><path d="M16 7l9 6v12H7V13z" style="fill:var(--surface)"></path><rect x="13" y="18" width="6" height="7" rx="1" style="fill:var(--accent-strong)"></rect></svg>
+          <span>SmartiHats</span>
+        </div>
+        <p>Smart &amp; Intelligent Home Automation Technology Services, LLC.</p>
+        <p>Serving Sandy Springs &amp; Metro Atlanta. Licensed, insured, and resident on-site for every install.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="../../features/">Features</a></li>
+          <li><a href="../../solutions/">Solutions</a></li>
+          <li><a href="../../demo/">Demo</a></li>
+          <li><a href="../../pricing/">Pricing</a></li>
+          <li><a href="../../support/">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Get in touch</h2>
+        <ul>
+          <li><a href="../../book/">Book a consultation</a></li>
+          <li><a href="mailto:hello@smartihats.com">hello@smartihats.com</a></li>
+          <li><a href="../../support/">Support &amp; FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>
+        <p>&copy; 2026 SmartiHats, LLC &middot; Licensed, insured, resident on-site.</p>
+        <p>Third-party product names are references for compatibility only. Pricing shown are directional placeholders.</p>
+      </div>
+      <div>
+        <p>Updated November 2026 &middot; <a href="../../sitemap.xml">Sitemap</a> &middot; <a href="../../support/">Contact &amp; Support</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
