@@ -1,0 +1,5 @@
+# Site build tooling — not for the public repo
+backup-old-2026-11-12/
+__pycache__/
+dogfood/
+*.pyc
